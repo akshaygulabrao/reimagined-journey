@@ -126,7 +126,7 @@ func main() {
 	if *verbose {
 		utils.SetLogLevel(utils.LogLevelDebug)
 	} else {
-		utils.SetLogLevel(utils.LogLevelInfo)
+		utils.SetLogLevel(utils.LogLevelDebug)
 	}
 	utils.SetLogTimeFormat("")
 

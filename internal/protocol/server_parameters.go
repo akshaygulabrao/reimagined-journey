@@ -4,7 +4,8 @@ import "time"
 
 // MaxPacketSize is the maximum packet size, including the public header, that we use for sending packets
 // This is the value used by Chromium for a QUIC packet sent using IPv6 (for IPv4 it would be 1370)
-const MaxPacketSize ByteCount = 1350
+// initially 1350, just modified by akshay
+const MaxPacketSize ByteCount = 1000
 
 // NonForwardSecurePacketSizeReduction is the number of bytes a non forward-secure packet has to be smaller than a forward-secure packet
 // This makes sure that those packets can always be retransmitted without splitting the contained StreamFrames
@@ -16,7 +17,8 @@ const NonForwardSecurePacketSizeReduction = 50
 const DefaultMaxCongestionWindow = 2500
 
 // InitialCongestionWindow is the initial congestion window in QUIC packets
-const InitialCongestionWindow = 32
+//initially 32, just modified by me
+const InitialCongestionWindow =1 
 
 // MaxUndecryptablePackets limits the number of undecryptable packets that a
 // session queues for later until it sends a public reset.

@@ -124,9 +124,9 @@ func main() {
 	flag.Parse()
 
 	if *verbose {
-		utils.SetLogLevel(utils.LogLevelDebug)
+		utils.SetLogLevel(utils.LogLevelInfo)
 	} else {
-		utils.SetLogLevel(utils.LogLevelDebug)
+		utils.SetLogLevel(utils.LogLevelInfo)
 	}
 	utils.SetLogTimeFormat("")
 
